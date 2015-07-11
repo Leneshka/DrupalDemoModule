@@ -1,4 +1,4 @@
-name: Module name
+name: Demo Module by PhpStorm
 type: module
-description: 'A description of what your module does.'
+description: 'Drupal demo module developed in PhpStorm'
 core: 8.x
