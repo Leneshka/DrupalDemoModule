@@ -5,3 +5,12 @@
  *
  * Unfortunately currently it does nothing.
  */
+
+
+
+
+function hook_element_info_alter(array &$types) { // Decrease the default size of textfields.
+    if (isset($types ['textfield']['#size'])) {
+        $types ['textfield']['#size'] = 40;
+  }
+}
