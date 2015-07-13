@@ -6,10 +6,15 @@
  * Unfortunately currently it does nothing.
  */
 
+/**
+ * Implements hook_css_alter().
+ */
+function ps_demo_css_alter(&$css, \Drupal\Core\Asset\AttachedAssetsInterface $assets) {
+
+}
 
 
-
-function ps_demo_info_alter(array &$types) { // Decrease the default size of textfields.
+function ps_demo_element_info_alter(array &$types) { // Decrease the default size of textfields.
     if (isset($types ['textfield']['#size'])) {
         $types ['textfield']['#size'] = 40;
   }
